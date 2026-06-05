@@ -1,0 +1,18 @@
+
+# Rust / Cargo
+sim-core/target/
+
+# WebAssembly build output
+frontend/src/wasm/
+
+# Node / npm
+frontend/node_modules/
+frontend/.vite/
+frontend/dist/
+
+# OS / Editor junk
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/

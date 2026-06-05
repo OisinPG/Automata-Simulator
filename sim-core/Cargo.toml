@@ -1,0 +1,20 @@
+[package]
+name = "sim-core"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+# "cdylib" means "C dynamic library" — required for WASM output.
+# Without this, Rust would build a normal binary instead of a .wasm file.
+crate-type = ["cdylib"]
+
+[dependencies]
+# wasm-bindgen is the bridge between Rust and JavaScript/TypeScript.
+# It auto-generates the JS glue code so TS can call Rust functions directly.
+wasm-bindgen = "0.2"
+js-sys = "0.3"
+
+[profile.release]
+# Optimization level 3 = maximum speed (at the cost of longer compile times).
+# This only applies to release builds (wasm-pack build --release).
+opt-level = 3
