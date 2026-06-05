@@ -30,7 +30,7 @@ automata-sim/
 Install these once before anything else.
 
 | Tool | Purpose | Download |
------------------------------
+|---------------------------|
 | Rust + Cargo | Compiles the simulation core | https://rustup.rs |
 | wasm-pack | Builds Rust → WASM + generates TS bindings | `cargo install wasm-pack` |
 | Node.js (LTS) | Runs the frontend dev server | https://nodejs.org |
@@ -111,7 +111,7 @@ error, the build is stale — re-run `wasm-pack build`.
 ## Quick Reference
 
 | Task | Command | Run from |
------------------------------
+|---------------------------|
 | Install WASM target | `rustup target add wasm32-unknown-unknown` | anywhere |
 | Install wasm-pack | `cargo install wasm-pack` | anywhere |
 | Install frontend deps | `npm install` | `frontend/` |
